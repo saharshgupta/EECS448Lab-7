@@ -1,3 +1,12 @@
+/*
+ File Name: tester.cpp
+ Author: Saharsh Gupta s510g881@ku.edu
+ KUID: 2826224
+ Lab Assignment Number: 7
+ Description: This is the tester.cpp file where all the testing functions are defined.
+ Last edited: 04/26/2019
+*/
+
 #include "tester.h"
 #include <iostream>
 #include "LinkedListOfInts.h"

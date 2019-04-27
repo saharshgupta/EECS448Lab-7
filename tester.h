@@ -1,3 +1,11 @@
+/*
+ File Name: tester.h
+ Author: Saharsh Gupta s510g881@ku.edu
+ KUID: 2826224
+ Lab Assignment Number: 7
+ Description: This is the tester.h file where all the testing functions are declared.
+ Last edited: 04/26/2019
+*/
 class tester {
 	public:
 		void runTests();
