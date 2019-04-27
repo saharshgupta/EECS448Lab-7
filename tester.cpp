@@ -12,28 +12,49 @@
 #include "LinkedListOfInts.h"
 
 void tester::runTests(){
-	std::cout << "Testing started."<<std::endl;
+	std::cout << "Testing started.\n"<<std::endl;
 	std::cout<<"Test 01: isEmpty returns true with empty list: "<<((test01()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 02: isEmpty returns false with 1 add front: "<<((test02()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 03: isEmpty returns false with 1 addBack: "<<((test03()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 04: size of empty list is 0: "<<((test04()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 05: size returns 1 after 1 addFront: "<<((test05()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 06: size returns 1 after 1 addBack: "<<((test06()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 07: size returns correct value after multiple addFronts: "<<((test07()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 08: size returns correct value after multiple addBacks: "<<((test08()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 09: Search returns false on empty list: "<<((test09()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 10: Search returns false when value is not in the list: "<<((test10()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 11: Search returns true when value is in the list: "<<((test11()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 12: toVector returns empty vector for empty list: "<<((test12()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 13: correct value after 1 addFront: "<<((test13()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 14: correct value after 1 addBack: "<<((test14()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 15: correct value after multiple addFronts: "<<((test15()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 16: correct value after multiple addBacks: "<<((test16()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 17: removeBack returns false for empty list: "<<((test17()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 18: removeFront returns false for empty list: "<<((test18()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 19: correct value after multiple addFronts and removeFronts: "<<((test19()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 20: correct value after multiple addBacks and removeBacks: "<<((test20()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 21: removeBack decreases the size of list by 1: "<<((test21()==1)?"PASSED":"FAILED")<<std::endl;
+	std::cout<<"<-------------------------------------->\n";
 	std::cout<<"Test 22: removeFront decreases the size of list by 1: "<<((test22()==1)?"PASSED":"FAILED")<<std::endl;
 	std::cout<<"\nTesting ended."<<std::endl;
 }
@@ -209,7 +230,7 @@ bool tester::test15(){
 	}
 	std::vector<int> list2vec = list->toVector();
 	passed = (list2vec == vec);
-	std::cout<<"\nExpected Vector: [";
+	std::cout<<"Expected Vector: [";
 	for(unsigned int i =0; i<list2vec.size();i++){
 		std::cout<<vec[i]<<((i<list2vec.size()-1)?", ":"");
 	}
@@ -233,7 +254,7 @@ bool tester::test16(){
 	}
 	std::vector<int> list2vec = list->toVector();
 	passed = (list2vec == vec);
-	std::cout<<"\nExpected Vector: [";
+	std::cout<<"Expected Vector: [";
 	for(unsigned int i =0; i<list2vec.size();i++){
 		std::cout<<vec[i]<<((i<list2vec.size()-1)?", ":"");
 	}
@@ -277,7 +298,7 @@ bool tester::test19(){
 	}
 	passed = (list->size() == 0);
 	std::vector<int> list2vec = list->toVector();
-	std::cout<<"\nList to Vector: [";
+	std::cout<<"List to Vector: [";
 	for(unsigned int i =0; i<list2vec.size();i++){
 		std::cout<<list2vec[i]<<((i<list2vec.size()-1)?", ":"");
 	}
@@ -299,7 +320,7 @@ bool tester::test20(){
 	}
 	passed = (list->size() == 0);
 	std::vector<int> list2vec = list->toVector();
-	std::cout<<"\nList to Vector: [";
+	std::cout<<"List to Vector: [";
 	for(unsigned int i =0; i<list2vec.size();i++){
 		std::cout<<list2vec[i]<<((i<list2vec.size()-1)?", ":"");
 	}
