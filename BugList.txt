@@ -1,0 +1,7 @@
+Bugs:
+-isEmpty always returns true
+-addBack doesn't add to the end of the list, it adds to the front of the list.
+-removeBack and removeFront do not remove an element from the list. They return false for everything.
+
+Causes:
+-isEmpty always returning true might be why removeFront and removeBack always returns false and do not remove an element.
